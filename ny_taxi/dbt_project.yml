@@ -35,6 +35,10 @@ models:
     silver:
       +materialized: view
       +schema: silver
+    gold:
+      +materialized: view
+      +schema: gold
+
 
 seeds: 
   ny_taxi:

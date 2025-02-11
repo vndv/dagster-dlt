@@ -79,7 +79,7 @@ mv .env.example .env
 dbt deps
 ```
 
-5. Start dagster UI http://127.0.0.1:55450 or link in terminl
+5. Start dagster UI http://127.0.0.1:3000 or link in terminl
 
 ```bash
 uv run dagster dev
