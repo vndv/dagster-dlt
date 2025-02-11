@@ -79,6 +79,8 @@ Clickhouse:
 user: default
 password: clickhouse_password
 
+In Clickhouse create schema and tables for raw data from queries folder
+
 4. Create a .env file in the root directory and add the necessary environment variables 
 
 ```bash
