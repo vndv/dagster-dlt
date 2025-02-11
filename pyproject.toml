@@ -1,0 +1,31 @@
+[project]
+name = "src"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+
+requires-python = ">=3.12"
+dependencies = [
+    "pip>=25.0",
+    "dagster-embedded-elt>=0.25.11",
+    "dagster>=1.9.11",
+    "dlt[pyiceberg]>=1.6.1",
+    "pyarrow>=17.0.0",
+    "requests>=2.32.3",
+    "ruff>=0.9.5",
+    "s3fs>=2025.2.0",
+    "sqlalchemy>=2.0.18",
+    "pydantic-settings>=2.7.1",
+    "pydantic>=2.10.6",
+    "dagster-webserver>=1.9.11",
+    "dbt-clickhouse>=1.8.8",
+    "dbt-core>=1.8.9",
+    "dagster-dbt>=0.25.11",
+    "sqlfluff>=3.3.1",
+]
+
+[tool.dagster]
+module_name = "src"
+
+
+

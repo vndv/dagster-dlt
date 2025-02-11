@@ -1,0 +1,8 @@
+run_coordinator:
+  module: dagster.core.run_coordinator
+  class: QueuedRunCoordinator
+  config:
+    tag_concurrency_limits:
+      - key: "asset_type"
+        value: "ny_taxi"
+        limit: 1

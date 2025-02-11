@@ -1,0 +1,11 @@
+ny_taxi:
+  outputs:
+    dev:
+      type: clickhouse
+      host: localhost
+      port: 8123
+      schema: default
+      user: default
+      password: clickhouse_password
+      verify: False
+  target: dev

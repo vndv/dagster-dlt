@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: bronze
+    database: bronze
+    schema: bronze
+    tables:
+      - name: green_taxi
+      - name: yellow_taxi
