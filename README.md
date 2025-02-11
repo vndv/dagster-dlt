@@ -57,8 +57,8 @@ Docker
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone git@github.com:vndv/dagster-dlt.git
+cd dagster-dlt
 ```
 2. Set up a virtual environment:
 ```bash
