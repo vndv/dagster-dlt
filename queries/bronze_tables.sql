@@ -25,8 +25,8 @@ CREATE TABLE IF NOT EXISTS bronze.yellow_taxi (
           )
           ENGINE = Iceberg(
           'http://object-store:9000/zoomcamp/ny_taxi/yellow_taxi',
-          'mlZVGyXbEoBaRLambrRW',
-          'IsTaeoLcS5gikGNsISJWlvPx97StKZB88u16FpKG',
+          'access_key',
+          'secrert_key',
           'Parquet'
           );
         
@@ -56,7 +56,7 @@ CREATE TABLE IF NOT EXISTS bronze.green_taxi (
           )
           ENGINE = Iceberg(
           'http://object-store:9000/zoomcamp/ny_taxi/green_taxi',
-          'mlZVGyXbEoBaRLambrRW',
-          'IsTaeoLcS5gikGNsISJWlvPx97StKZB88u16FpKG',
+          'access_key',
+          'secrert_key',
           'Parquet'
           );

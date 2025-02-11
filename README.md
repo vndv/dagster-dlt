@@ -65,25 +65,37 @@ cd dagster-dlt
 uv venv --python 3.12
 uv sync
 ```
+3. Run docker services (Clickhouse, Minio)
 
+```bash
+docker-compose up -d
+```
+MinioUI localhost:9001
+user: minio-user
+password: minio-password
+ - add access_key in minio
 
-3. Create a .env file in the root directory and add the necessary environment variables 
+Clickhouse: 
+user: default
+password: clickhouse_password
+
+4. Create a .env file in the root directory and add the necessary environment variables 
 
 ```bash
 mv .env.example .env
 ```
 
-4. Install dbt packages in folder with dbt project
+5. Install dbt packages in folder with dbt project
 
 ```bash
 dbt deps
 ```
 
-5. Start dagster UI http://127.0.0.1:3000 or link in terminl
+6. Start dagster UI http://127.0.0.1:3000 or link in terminl
 
 ```bash
 uv run dagster dev
 ```
 
-6. In dagster UI first of all run backfill for dlt assets
+7. In dagster UI first of all run backfill for dlt assets
 after that you can materialize dbt models
