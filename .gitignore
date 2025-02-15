@@ -201,3 +201,4 @@ env*/
 
 # But explicitly ignore test.env files
 test.env
+.cursorrules
